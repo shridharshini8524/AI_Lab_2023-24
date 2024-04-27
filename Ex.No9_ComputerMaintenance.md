@@ -1,6 +1,6 @@
 # Ex.No: 9  Logic Programming –  Computer Maintenance Expert System
-### DATE:                                                                            
-### REGISTER NUMBER : 
+### DATE:23.03.24                                                                          
+### REGISTER NUMBER : 212222060240
 ### AIM: 
 Write a Prolog program to build a computer maintenance expert system.
 ###  Algorithm:
@@ -15,42 +15,14 @@ Write a Prolog program to build a computer maintenance expert system.
      
 ### Program:
 
-~~~fault(printer_head) :-
-	problem(not_printing),
-	problem(missing_dots),
-	problem(nonuniform_printing).
-fault(ribbon) :-
-	problem(not_printing),
-	problem(missing_dots),
-	problem(spread_ink).
-fault(paper) :-
-	problem(not_printing),
-	problem(paper_jam),
-	problem(out_of_paper).
-fault(motherboard) :-
-	problem(long_beep),
-	problem(short_beep).
-fault(hard_disc) :-
-	problem(two_short_beeps),
-	problem(blank_display).
-problem(not_printing).
-problem(missing_dots).
-problem(spread_ink).
-problem(two_short_beeps).
-problem(blank_display).
-~~~
-
-
-
-
-
-
+fault(printer_head) :- problem(not_printing), problem(missing_dots), problem(nonuniform_printing). fault(ribbon) :- problem(not_printing), problem(missing_dots), problem(spread_ink). fault(paper) :- problem(not_printing), problem(paper_jam), problem(out_of_paper). fault(motherboard) :- problem(long_beep), problem(short_beep). fault(hard_disc) :- problem(two_short_beeps), problem(blank_display). problem(not_printing). problem(missing_dots). problem(spread_ink). problem(two_short_beeps). problem(blank_display).
 
 
 
 ### Output:
+![WhatsApp Image 2024-04-27 at 10 58 36_67f02981](https://github.com/shridharshini8524/AI_Lab_2023-24/assets/148639799/82ceaa21-9eaf-441b-be79-b8fe32d3ea55)
 
-https://drive.google.com/file/d/1rwS0Ea2nSu9PoW5Vk-OkY8q9_0ryYRIr/view?usp=drivesdk
+
 
 ### Result:
 Thus the simple omputer maintenance expert system was built sucessfully.
