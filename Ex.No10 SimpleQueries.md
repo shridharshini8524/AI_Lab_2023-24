@@ -1,6 +1,6 @@
 # Ex.No: 10  Logic Programming –  Simple queries from facts and rules
 ### DATE:                                                                            
-### REGISTER NUMBER : 
+### REGISTER NUMBER : 212222060240
 ### AIM: 
 To write a prolog program to find the answer of query. 
 ###  Algorithm:
@@ -22,8 +22,11 @@ Construct the FOL representation for the following sentences <br>
    Convert into clause form and Prove that John like Apple by using Prolog. <br> 
 ### Program:
 
+likes(john,X):- food(X). eats(bill,X):- eats(sue,X). eats(Y,X):- food(X). eats(bill,peanuts). food(apple). food(chicken). food(peanuts).
 
 ### Output:
+
+![WhatsApp Image 2024-04-27 at 11 02 12_a40ce7ec](https://github.com/shridharshini8524/AI_Lab_2023-24/assets/148639799/2593f55e-8f07-437e-ac4d-47f9bba8faf8)
 
 ### Task 2:
 Consider the following facts and represent them in predicate form: <br>              
@@ -35,8 +38,11 @@ Convert the facts in predicate form to clauses and then prove by resolution: “
 
 ### Program:
 
+likes(steve,X):- easycourse(X). hard(sciencecourse). easycourse(X):- course(X,dept(havefun)). course(bk301,dept(havefun)).
 
 ### Output:
+
+![WhatsApp Image 2024-04-27 at 11 03 03_674ea53b](https://github.com/shridharshini8524/AI_Lab_2023-24/assets/148639799/2f197973-2d6e-49ab-806c-122f52c9d58b)
 
 ### Task 3:
 Consider the statement <br> 
@@ -44,8 +50,14 @@ Consider the statement <br>
 Convert to Clause form and prove west is criminal by using Prolog.<br> 
 ### Program:
 
+criminal(X):- american(X), weapon(Y), hostile(Z), sells(X,Y,Z). weapon(Y):- missile(Y). hostile(Z):- enemy(Z,X).
+
+sells(west,Y,nano):- missile(Y), owns(nano,Y).
+
+missile(m). owns(nano,m). enemy(nano,america). american(west).
 
 ### Output:
+![WhatsApp Image 2024-04-27 at 11 03 50_a23b6692](https://github.com/shridharshini8524/AI_Lab_2023-24/assets/148639799/cfb1c4f9-921c-4816-bf71-e57c8d7d9f2e)
 
 ### Result:
 Thus the prolog programs were executed successfully and the answer of query was found.
